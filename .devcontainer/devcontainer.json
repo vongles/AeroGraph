@@ -1,0 +1,21 @@
+{
+  "name": "AeroGraph Rust & PyO3 Env",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "vadimcn.vscode-lldb",
+        "ms-python.python"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libx11-xcb-dev libxkbcommon-dev libwayland-dev libx11-dev pkg-config && pip install maturin numpy gymnasium"
+}
+
