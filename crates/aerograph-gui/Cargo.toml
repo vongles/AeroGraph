@@ -1,0 +1,14 @@
+[package]
+name = "aerograph-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aerograph-core.workspace = true
+glam.workspace = true
+wgpu.workspace = true
+egui.workspace = true
+eframe.workspace = true
+egui_node_graph.workspace = true
+env_logger = "0.11"

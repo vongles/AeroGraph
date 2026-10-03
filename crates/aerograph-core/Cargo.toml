@@ -1,0 +1,15 @@
+[package]
+name = "aerograph-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+glam.workspace = true
+rayon.workspace = true
+crossbeam-queue.workspace = true
+bytemuck.workspace = true
+wgpu.workspace = true
+tokio.workspace = true
+thiserror = "1.0"
+log = "0.4"

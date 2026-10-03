@@ -1,0 +1,12 @@
+[package]
+name = "py-aerograph"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+crate-type = ["cdylib"]
+
+[dependencies]
+aerograph-core.workspace = true
+glam.workspace = true
+pyo3.workspace = true
+numpy.workspace = true
